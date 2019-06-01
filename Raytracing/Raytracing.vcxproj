@@ -107,15 +107,23 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>
+      </StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="hitable.cpp" />
+    <ClCompile Include="hitable_list.cpp" />
     <ClCompile Include="ray.cpp" />
+    <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="vec3.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="hitable.h" />
+    <ClInclude Include="hitable_list.h" />
     <ClInclude Include="ray.h" />
+    <ClInclude Include="Sphere.h" />
     <ClInclude Include="vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

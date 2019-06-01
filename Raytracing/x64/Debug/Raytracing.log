@@ -1,1 +1,22 @@
-﻿
+﻿  源.cpp
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\vec3.h(55): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\vec3.h(157): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(24): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(36): warning C4305: “参数”: 从“double”到“float”截断
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(48): warning C4305: “参数”: 从“double”到“float”截断
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(64): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(64): warning C4305: “参数”: 从“double”到“float”截断
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(85): warning C4305: “参数”: 从“double”到“float”截断
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(91): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(92): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(100): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(101): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(102): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  hitable_list.cpp
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\vec3.h(55): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\vec3.h(157): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+  Raytracing.vcxproj -> d:\我的文档\visual studio 2015\Projects\Raytracing\x64\Debug\Raytracing.exe
+  Raytracing.vcxproj -> d:\我的文档\visual studio 2015\Projects\Raytracing\x64\Debug\Raytracing.pdb (Partial PDB)
