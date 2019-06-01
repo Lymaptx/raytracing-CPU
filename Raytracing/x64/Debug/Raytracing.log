@@ -1,0 +1,12 @@
+﻿  源.cpp
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\vec3.h(55): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\vec3.h(157): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(10): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(10): warning C4305: “参数”: 从“double”到“float”截断
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(32): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(38): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(39): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\源.cpp(40): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  Raytracing.vcxproj -> d:\我的文档\visual studio 2015\Projects\Raytracing\x64\Debug\Raytracing.exe
+  Raytracing.vcxproj -> d:\我的文档\visual studio 2015\Projects\Raytracing\x64\Debug\Raytracing.pdb (Partial PDB)
