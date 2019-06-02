@@ -16,6 +16,7 @@ bool hitable_list::hit(const ray& r, float t_min, float t_max, hit_record& rec)c
 		{
 			isHit = true;
 			temp_max = rec.t;
+			*temp_rec.mat_ptr;
 			rec = temp_rec;
 		}
 	}

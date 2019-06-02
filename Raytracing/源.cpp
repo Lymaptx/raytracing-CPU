@@ -8,6 +8,7 @@
 #include"material.h"
 #include"metal.h"
 #include"lambertian.h"
+#include"dielectric.h"
 using namespace std;
 //射线与球求交
 //bool hit_with_Sphere(const vec3& center, float r, const ray& ray)
@@ -54,7 +55,7 @@ using namespace std;
 vec3 color(const ray&r, hitable *world,int depth)
 {
 	hit_record rec;
-	if (world->hit(r, 0.001, 10000.0, rec))
+	if (world->hit(r, 0.01, 10000.0, rec))
 	{
 		ray scattered;
 		vec3 attenuation;
@@ -85,17 +86,27 @@ int main()
 	int ny = 200;
 	int ns = 100;
 	
-	ofstream outfile("chapter8_2.ppm", ios_base::out);
+	ofstream outfile("chapter9.ppm", ios_base::out);
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
 	cout <<  "P3\n" << nx << " " << ny << "\n255\n";
 
 	camera camera;
 
-	hitable *list[2];
-	list[0] = new Sphere(vec3(0.0, 0.0, -1.0), 0.5,new lambertian(vec3(1.0,0.2,0.2)));
-	list[1] = new Sphere(vec3(0.0, -100.5, -1.0), 100,new metal(vec3(0.2,0.2,0.2),0.3));
-	hitable *world = new hitable_list(list, 2);
+	hitable *list[5];
+
+	list[0] = new Sphere(vec3(0, 0, -1), 0.5, new lambertian(vec3(0.1, 0.2, 0.5)));
+
+	list[4] = new Sphere(vec3(0, -100.5, -1), 100, new lambertian(vec3(0.8, 0.8, 0.0)));
+
+	list[2] = new Sphere(vec3(1, 0, -1), 0.5, new metal(vec3(0.8, 0.6, 0.2), 0.0));
+
+	list[3] = new Sphere(vec3(-1, 0, -1), 0.5, new dielectric(1.5));
+
+	list[1] = new Sphere(vec3(-1, 0, -1), -0.45, new dielectric(1.5));
+
+	hitable *world = new hitable_list(list, 5);
+
 	for (int j = ny - 1 ; j >= 0;j--)
 	{
 		for (int i = 0;i < nx;i++)
