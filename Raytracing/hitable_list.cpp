@@ -15,8 +15,7 @@ bool hitable_list::hit(const ray& r, float t_min, float t_max, hit_record& rec)c
 		if ((list[i]->hit(r, t_min, temp_max, temp_rec)))
 		{
 			isHit = true;
-			temp_max = rec.t;
-			*temp_rec.mat_ptr;
+			temp_max = temp_rec.t;
 			rec = temp_rec;
 		}
 	}
