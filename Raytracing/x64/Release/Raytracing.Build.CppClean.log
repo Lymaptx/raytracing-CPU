@@ -1,10 +1,14 @@
 d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\vc140.pdb
 d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\vec3.obj
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\sphere.obj
 d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\ray.obj
 d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\hitable_list.obj
 d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\hitable.obj
 d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\源.obj
-d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\sphere.obj
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\camera.obj
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\material.obj
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\metal.obj
+d:\我的文档\visual studio 2015\projects\raytracing\raytracing\x64\release\lambertian.obj
 d:\我的文档\visual studio 2015\projects\raytracing\x64\release\raytracing.exe
 d:\我的文档\visual studio 2015\projects\raytracing\x64\release\raytracing.ipdb
 d:\我的文档\visual studio 2015\projects\raytracing\x64\release\raytracing.iobj
