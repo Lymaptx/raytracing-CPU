@@ -9,6 +9,7 @@
 #include"metal.h"
 #include"lambertian.h"
 #include"dielectric.h"
+#include"move_Sphere.h"
 using namespace std;
 //射线与球求交
 //bool hit_with_Sphere(const vec3& center, float r, const ray& ray)
@@ -94,7 +95,9 @@ hitable* random_scene()
 			{
 				if (choose_mat > 0.7)
 				{
-					list[count++] = new Sphere(center, 0.2, new lambertian(vec3((rand() % 100 / 100.0)*(rand() % 100 / 100.0), (rand() % 100 / 100.0)*(rand() % 100 / 100.0), (rand() % 100 / 100.0)*(rand() % 100 / 100.0))));
+					list[count++] = new move_Sphere(center,center+vec3(0.0,0.5*(rand()%100)/100.0,0.0), 0.2, 
+						new lambertian(vec3((rand() % 100 / 100.0)*(rand() % 100 / 100.0), (rand() % 100 / 100.0)*(rand() % 100 / 100.0), (rand() % 100 / 100.0)*(rand() % 100 / 100.0)))
+						,0.0,1.0);
 				}
 				else if (choose_mat < 0.95)
 				{
@@ -102,7 +105,7 @@ hitable* random_scene()
 						new metal(vec3(0.5*(1 + (rand() % (100) / (float)(100))),
 							0.5*(1 + (rand() % (100) / (float)(100))),
 							0.5*(1 + (rand() % (100) / (float)(100)))),
-							0.5*(1 + (rand() % (100) / (float)(100)))));
+							0.1*(1 + (rand() % (100) / (float)(100)))));
 
 				
 				
@@ -124,17 +127,17 @@ hitable* random_scene()
 
 int main()
 {
-	int nx = 400;
-	int ny = 200;
-	int ns = 100;
+	int nx = 1200;
+	int ny = 800;
+	int ns = 50;
 	
-	ofstream outfile("chapter10.ppm", ios_base::out);
+	ofstream outfile("chapterNext_1.ppm", ios_base::out);
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
 	cout <<  "P3\n" << nx << " " << ny << "\n255\n";
 	vec3 lookfrom(13, 2, 3);
 	vec3 lookat(0, 0, 0.0);
-	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny),(lookfrom-lookat).length(),0.0);
+	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny),(lookfrom-lookat).length(),0.0,0.0,0.3);
 
 	hitable *list[5];
 

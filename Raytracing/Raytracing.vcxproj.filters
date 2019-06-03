@@ -48,6 +48,9 @@
     <ClCompile Include="dielectric.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="move_Sphere.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vec3.h">
@@ -78,6 +81,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="dielectric.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="move_Sphere.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
